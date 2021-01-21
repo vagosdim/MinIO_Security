@@ -1,17 +1,43 @@
-# Usage: python3 file_uploader.py ~/Pictures/dd.png
+# Usage: python3 file_uploader.py /home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Project/test.txt
 import sys
 import urllib3
+import ctypes
+import os
 from minio import Minio
 from minio.error import S3Error
+from ctypes import *
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "photos"
+AES_KEY = "/home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Project/key.dat"
+
+class go_string(Structure):
+    _fields_ = [
+        ("p", c_char_p),
+        ("n", c_int)]
+        
+
+def encrypt(file_path, file_name, AES_KEY):
+
+    lib = cdll.LoadLibrary('./libencrypt.so')
+    lib.encrypt.restype = c_char_p
+    
+    fp = go_string(c_char_p(file_path.encode('utf-8')), len(file_path))
+    key = go_string(c_char_p(AES_KEY.encode('utf-8')), len(AES_KEY))
+    file_name = go_string(c_char_p(file_name.encode('utf-8')), len(file_name))
+
+    encrypted_file_name = lib.encrypt(fp, file_name, key)
+
+    return encrypted_file_name
 
 def main():
     
     # Get input file path from command line
     file_path = sys.argv[1]
-    file_name = file_path.split("/")[-1]
+
+    # Extract only the name of the file without the ending ex/ "test.txt" --> "test"
+    file_name = (file_path.split("/")[-1]).split(".")[0]
+    file_name = encrypt(file_path, file_name, AES_KEY)
 
     # Create a client with the MinIO server playground, its access key
     # and secret key.
@@ -19,7 +45,7 @@ def main():
     #    MINIO_URL,
     #    access_key="minio",
     #    secret_key="minio123",
-    #    secure=True,
+    #    secure=False,
     #)
 
     httpClient = urllib3.PoolManager(
@@ -47,10 +73,8 @@ def main():
     else:
         print("Bucket " + BUCKET_NAME + " already exists.")
 
-    # Upload '/home/user/Photos/asiaphotos.zip' as object name
-    # 'asiaphotos-2015.zip' to bucket 'asiatrip'.
     client.fput_object(
-        BUCKET_NAME, file_name, file_path,
+        BUCKET_NAME, file_name, file_name,
     )
     print(
         file_path + " is successfully uploaded as object " + str(file_name) + " to bucket: " + BUCKET_NAME

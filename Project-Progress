@@ -56,3 +56,10 @@ ex. ./minio server /mnt/data --certs-dir=/home/edimoulis/.minio/certs/CAs/
 4. Copy the key and the certifcate to certs directory
     a. cp public.crt /home/edimoulis/.minio/certs/
     b. cp private.key /home/edimoulis/.minio/certs/
+
+
+# AES256 Encryptiom
+To encrypt/decrypt a .txt file: ex./  go run aes256_file_encrypt.go test.txt
+
+# To expose Go function and cretaing C library to call in Python
+go build -buildmode=c-shared -o libtest.so aes256_file_encrypt.go

@@ -10,6 +10,7 @@ import (
 	"log"
 	"os"
 	"fmt"
+	"C"
 )
 
 func main() {
@@ -117,4 +118,9 @@ func decrypt(encryptedFile string, keyString string) (decryptedString string){
 	}
 
 	return fmt.Sprintf("%s", plaintext)
+}
+
+//export test
+func test( ) *C.char{
+	return C.CString("test.txt")
 }
