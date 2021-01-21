@@ -1,0 +1,58 @@
+1. Installed golang programming language 1.15
+    https://golang.org/doc/install
+
+    Short paragraph about the language.
+
+2. Installed Docker for Debian buster. (Docker version 20.10.2)
+
+    a) Installation: https://docs.docker.com/engine/install/debian/
+    b) sudo chown edimoulis /var/run/docker.sock
+
+    ex. docker run hello-world
+
+    Short paragraph about Docker containers.
+
+
+RUN MINIO LOCALY (NO DOCKER)
+
+1. make
+
+2. Enter credentials
+2.1 export MINIO_ROOT_USER=minio
+2.2 export MINIO_ROOT_PASSWORD=minio123
+
+3. ./minio server /mnt/data
+
+MC CLIENT
+
+1. Edit /home/edimoulis/.mc/config.json
+2. # Listing the buckets: ./mc ls myminio
+
+
+PYTHON CLIENT
+
+1. pip3 install minio
+2. file_uploader.py
+
+CONNECT TO MINIO VIA TLS
+
+Link: https://docs.min.io/docs/how-to-secure-access-to-minio-server-with-tls.html
+
+ex. ./minio server /mnt/data --certs-dir=/home/edimoulis/.minio/certs/CAs/
+
+1. Generate a private key with RSA.
+    
+    openssl genrsa -out private.key 2048
+
+2. Create a file named openssl.conf with the content below.
+    Set IP.1 and/or DNS.1 to point to the correct IP/DNS addresses:
+
+    example in: SSL_Self_Signed/openssl.conf
+
+3. Run openssl
+    
+    openssl req -new -x509 -nodes -days 730 -key private.key -out public.crt -config openssl.conf
+
+4. Copy the key and the certifcate to certs directory
+    a. cp public.crt /home/edimoulis/.minio/certs/
+    b. cp private.key /home/edimoulis/.minio/certs/
