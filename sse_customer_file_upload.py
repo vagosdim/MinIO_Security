@@ -1,4 +1,4 @@
-# Usage: python3 sse_customer_file_upload.py test.txt
+# Usage: python3 sse_customer_file_upload.py test.txt test_key.dat
 import sys
 import urllib3
 import os
@@ -9,14 +9,15 @@ from minio.error import S3Error
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "photos"
-AES_KEY = "/home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Project/key.dat"
-        
 
-def sse_encryption():
+def sse_encryption(key):
 
-    #key = base64.encode()
-    key_str = 'MzJieXRlc2xvbmdzZWNyZXRrZXltdXN0'
+    f = open(key, "r")
+
+    key_str = f.read()
+    key_str = key_str.replace('\n', '')
     key = key_str.encode('ascii')
+    
     SSE = SseCustomerKey(key)
 
     return (SSE)
@@ -25,6 +26,9 @@ def main():
     
     # Get input file path from command line
     file_name = sys.argv[1]
+
+    # Get Symmetric Decryption key path
+    key_path = sys.argv[2]
 
     httpClient = urllib3.PoolManager(
                 timeout=urllib3.Timeout.DEFAULT_TIMEOUT,
@@ -52,9 +56,9 @@ def main():
         print("Bucket " + BUCKET_NAME + " already exists.")
 
     # SSE Customer provided key encryption
-    SSE = sse_encryption()
+    SSE = sse_encryption(key_path)
 
-    client.fput_object(
+    result = client.fput_object(
         BUCKET_NAME, file_name, file_name, sse=SSE
     )
     print(

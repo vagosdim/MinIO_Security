@@ -11,7 +11,7 @@ from minio.error import S3Error
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "photos"
 
-OLD_AES_KEY = 'MzJieXRlc2xvbmdzZWNyZXRrZXltdXN0'
+OLD_AES_KEY = '638b7a2cd0748b7f395501b657bcb858'
 NEW_AES_KEY = 'f7ff22264f628a669b1650270ee5672d'
 
 
@@ -58,15 +58,17 @@ def main():
     # Deestination Object SSE Customer provided key encryption
     SSE_DST = sse_encryption(NEW_AES_KEY)
 
-    # Copy the object to the same object using a different key
+    # Copy the object to the same bucket using a different key
+    # Object does not leave the server this way
     result = client.copy_object(
-        "photos",
-        "copy_object",
-        CopySource("photos", "test.txt", ssec=SSE_SRC),
+        BUCKET_NAME,
+        file_name,
+        CopySource(BUCKET_NAME, file_name, ssec=SSE_SRC),
         sse=SSE_DST,
 
     )
     print(result.object_name, result.version_id)
+
 
 if __name__ == "__main__":
     try:

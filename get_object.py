@@ -59,8 +59,10 @@ def main():
     SSE = sse_encryption(key_path)
 
     output_filename = input("Save downloaded object as: ")
+    
     # Download object
     client.fget_object(BUCKET_NAME, file_name, output_filename, ssec=SSE)
+
 
 
 if __name__ == "__main__":
