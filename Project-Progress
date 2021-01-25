@@ -34,6 +34,8 @@ PYTHON CLIENT
 1. pip3 install minio
 2. file_uploader.py
 
+ex/ python3 file_uploader.py /home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Project/test.txt
+
 CONNECT TO MINIO VIA TLS
 
 Link: https://docs.min.io/docs/how-to-secure-access-to-minio-server-with-tls.html
@@ -62,4 +64,44 @@ ex. ./minio server /mnt/data --certs-dir=/home/edimoulis/.minio/certs/CAs/
 To encrypt/decrypt a .txt file: ex./  go run aes256_file_encrypt.go test.txt
 
 # To expose Go function and cretaing C library to call in Python
-go build -buildmode=c-shared -o libtest.so aes256_file_encrypt.go
+go build -buildmode=c-shared -o libencrypt.so libencrypt.go
+
+
+
+SSE-C: Server Side Encryption with Customer Key
+
+The MinIO server will reject any SSE-C request made over an insecure (non-TLS) connection per the S3 specification. This means that SSE-C requires TLS / HTTPS, and an SSE-C request contains the encryption key.
+If an SSE-C request is made over a non-TLS connection, the SSE-C encryption key must be treated as compromised.
+Per the S3 specification, the content-md5 returned by an SSE-C PUT operation does not match the MD5 sum of the uploaded object.
+The MinIO server uses a tamper-proof encryption scheme to encrypt objects and does not save the encryption key, which means you are responsible for managing encryption keys. If you lose the encryption key for an object, you will lose the ability to decrypt that object.
+
+NOTES:
+
+sse customer key: This header is used to transport the base 64 encoded byte string representation of the AES 256 key used in the server-side encryption process.
+sse customer key md5: This header is used to transport the base64-encoded 128-bit MD5 digest of the encryption key according to RFC 1321. The object store uses this value to validate the key passes in the x-amz-server-side-encryption-customer-key has not been corrupted during transport and encoding process.
+                      The digest must be calculated on the key BEFORE the key is base 64 encoded.
+
+AWS CLIENT
+
+1. Put an object:
+
+aws s3api put-object \
+  --no-verify-ssl \
+  --endpoint-url https://localhost:9000 \
+  --bucket photos --key aeskey \
+  --sse-customer-algorithm AES256 \
+  --sse-customer-key MzJieXRlc2xvbmdzZWNyZXRrZXltdXN0cHJvdmlkZWQ= \
+  --sse-customer-key-md5 7PpPLAK26ONlVUGOWlusfg== \
+  --body ~/Master/Semester3/Security-of-Computer-Systems/Project/key.dat
+
+2. Get an object
+
+aws s3api get-object \
+  --no-verify-ssl \
+  --endpoint-url https://localhost:9000 \
+  --bucket photos \
+  --key key.dat \
+  --sse-customer-algorithm AES256 \
+  --sse-customer-key MzJieXRlc2xvbmdzZWNyZXRrZXltdXN0cHJvdmlkZWQ= \
+  --sse-customer-key-md5 7PpPLAK26ONlVUGOWlusfg== \
+  key.dat

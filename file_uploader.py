@@ -74,7 +74,7 @@ def main():
         print("Bucket " + BUCKET_NAME + " already exists.")
 
     client.fput_object(
-        BUCKET_NAME, file_name, file_name,
+        BUCKET_NAME, file_name, file_name
     )
     print(
         file_path + " is successfully uploaded as object " + str(file_name) + " to bucket: " + BUCKET_NAME
