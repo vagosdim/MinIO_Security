@@ -1,28 +1,29 @@
-# Usage: python3 sse_customer_file_upload.py test.txt
+# Usage: python3 object_re_encryption.py test.txt
+
 import sys
-import urllib3
-import os
 import base64
+import urllib3
 from minio import Minio
 from minio.sse import SseCustomerKey
+from minio.commonconfig import REPLACE, CopySource
 from minio.error import S3Error
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "photos"
-AES_KEY = "/home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Project/key.dat"
-        
 
-def sse_encryption():
+OLD_AES_KEY = 'MzJieXRlc2xvbmdzZWNyZXRrZXltdXN0'
+NEW_AES_KEY = 'f7ff22264f628a669b1650270ee5672d'
 
-    #key = base64.encode()
-    key_str = 'MzJieXRlc2xvbmdzZWNyZXRrZXltdXN0'
-    key = key_str.encode('ascii')
+
+def sse_encryption(key):
+
+    key = key.encode('ascii')
     SSE = SseCustomerKey(key)
 
     return (SSE)
 
 def main():
-    
+
     # Get input file path from command line
     file_name = sys.argv[1]
 
@@ -42,7 +43,7 @@ def main():
                     secret_key='minio123',
                     secure=True,
                     http_client=httpClient)
-
+    
 
     # Make 'asiatrip' bucket if not exist.
     found = client.bucket_exists(BUCKET_NAME)
@@ -51,19 +52,21 @@ def main():
     else:
         print("Bucket " + BUCKET_NAME + " already exists.")
 
-    # SSE Customer provided key encryption
-    SSE = sse_encryption()
+    # Source object customer provided key
+    SSE_SRC = sse_encryption(OLD_AES_KEY)
+    
+    # Deestination Object SSE Customer provided key encryption
+    SSE_DST = sse_encryption(NEW_AES_KEY)
 
-    client.fput_object(
-        BUCKET_NAME, file_name, file_name, sse=SSE
+    # Copy the object to the same object using a different key
+    result = client.copy_object(
+        "photos",
+        "copy_object",
+        CopySource("photos", "test.txt", ssec=SSE_SRC),
+        sse=SSE_DST,
+
     )
-    print(
-        file_name + " is successfully uploaded as object " + str(file_name) + " to bucket: " + BUCKET_NAME
-    )
-
-    # Download the object again with SSE configuration
-    client.fget_object(BUCKET_NAME, file_name, "readmetest.txt", ssec=SSE)
-
+    print(result.object_name, result.version_id)
 
 if __name__ == "__main__":
     try:
