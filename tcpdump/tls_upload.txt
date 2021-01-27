@@ -1,0 +1,303 @@
+15:30:43.001988 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [S], seq 2446474719, win 65495, options [mss 65495,sackOK,TS val 516735038 ecr 0,nop,wscale 7], length 0
+15:30:43.002010 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [S.], seq 3163263900, ack 2446474720, win 65483, options [mss 65495,sackOK,TS val 516735038 ecr 516735038,nop,wscale 7], length 0
+15:30:43.002020 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], ack 1, win 512, options [nop,nop,TS val 516735038 ecr 516735038], length 0
+15:30:43.003150 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1:518, ack 1, win 512, options [nop,nop,TS val 516735039 ecr 516735038], length 517
+15:30:43.003159 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 518, win 508, options [nop,nop,TS val 516735039 ecr 516735039], length 0
+15:30:43.005572 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 1:1581, ack 518, win 512, options [nop,nop,TS val 516735042 ecr 516735039], length 1580
+15:30:43.005581 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], ack 1581, win 503, options [nop,nop,TS val 516735042 ecr 516735042], length 0
+15:30:43.005904 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 518:582, ack 1581, win 503, options [nop,nop,TS val 516735042 ecr 516735042], length 64
+15:30:43.006120 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 582:1021, ack 1581, win 503, options [nop,nop,TS val 516735042 ecr 516735042], length 439
+15:30:43.006133 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1021, win 512, options [nop,nop,TS val 516735042 ecr 516735042], length 0
+15:30:43.006495 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 1581:2009, ack 1021, win 512, options [nop,nop,TS val 516735043 ecr 516735042], length 428
+15:30:43.007399 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1021:1451, ack 2009, win 512, options [nop,nop,TS val 516735043 ecr 516735043], length 430
+15:30:43.007656 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 2009:2276, ack 1451, win 512, options [nop,nop,TS val 516735044 ecr 516735043], length 267
+15:30:43.047918 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], ack 2276, win 512, options [nop,nop,TS val 516735084 ecr 516735044], length 0
+15:30:43.276386 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1451:1958, ack 2276, win 512, options [nop,nop,TS val 516735312 ecr 516735044], length 507
+15:30:43.277120 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 2276:2825, ack 1958, win 512, options [nop,nop,TS val 516735313 ecr 516735312], length 549
+15:30:43.277140 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], ack 2825, win 508, options [nop,nop,TS val 516735313 ecr 516735313], length 0
+15:30:43.287095 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1958:2531, ack 2825, win 512, options [nop,nop,TS val 516735323 ecr 516735313], length 573
+15:30:43.287408 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 2531:18937, ack 2825, win 512, options [nop,nop,TS val 516735323 ecr 516735313], length 16406
+15:30:43.287433 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 18937:35343, ack 2825, win 512, options [nop,nop,TS val 516735323 ecr 516735313], length 16406
+15:30:43.287456 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 35343:51749, ack 2825, win 512, options [nop,nop,TS val 516735323 ecr 516735313], length 16406
+15:30:43.287759 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 51749, win 305, options [nop,nop,TS val 516735324 ecr 516735323], length 0
+15:30:43.287781 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 51749:84517, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.287928 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 84517, win 315, options [nop,nop,TS val 516735324 ecr 516735324], length 0
+15:30:43.287945 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 84517:117285, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288073 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 117285, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 0
+15:30:43.288098 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 117285:150053, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288116 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 150053:182821, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288156 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 182821, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 0
+15:30:43.288179 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 182821:215589, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288184 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 215589:248357, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288189 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 248357, win 2558, options [nop,nop,TS val 516735324 ecr 516735324], length 0
+15:30:43.288278 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 248357:281125, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288285 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 281125:313893, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288299 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 313893:346661, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288304 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 346661:379429, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288310 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 379429:412197, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288315 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 412197:444965, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288320 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 444965:477733, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288326 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 477733:510501, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288331 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 510501:543269, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288336 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 313893, win 4605, options [nop,nop,TS val 516735324 ecr 516735324], length 0
+15:30:43.288388 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 543269:576037, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288394 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 576037:608805, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288400 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 608805:641573, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288405 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 641573:674341, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288411 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 674341:707109, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288416 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 379429, win 6651, options [nop,nop,TS val 516735324 ecr 516735324], length 0
+15:30:43.288463 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 707109:739877, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288468 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 739877:772645, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288480 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 772645:805413, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288487 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 805413:838181, ack 2825, win 512, options [nop,nop,TS val 516735324 ecr 516735324], length 32768
+15:30:43.288493 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 444965, win 8697, options [nop,nop,TS val 516735325 ecr 516735324], length 0
+15:30:43.288544 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 838181:870949, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 32768
+15:30:43.288549 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 870949:903717, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 32768
+15:30:43.288555 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 903717:936485, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 32768
+15:30:43.288566 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 936485:1001968, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 65483
+15:30:43.288572 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 510501, win 10744, options [nop,nop,TS val 516735325 ecr 516735324], length 0
+15:30:43.288611 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 1001968:1067451, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 65483
+15:30:43.288618 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [.], seq 1067451:1132934, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 65483
+15:30:43.288615 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1183763:1200169, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288623 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1132934:1183763, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 50829
+15:30:43.288628 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 576037, win 12790, options [nop,nop,TS val 516735325 ecr 516735324], length 0
+15:30:43.288633 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 641573, win 13783, options [nop,nop,TS val 516735325 ecr 516735324], length 0
+15:30:43.288638 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1200169:1216575, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288641 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1067451, win 12001, options [nop,nop,TS val 516735325 ecr 516735324,nop,nop,sack 1 {1183763:1200169}], length 0
+15:30:43.288644 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1132934, win 11671, options [nop,nop,TS val 516735325 ecr 516735325,nop,nop,sack 1 {1183763:1200169}], length 0
+15:30:43.288648 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1200169, win 11467, options [nop,nop,TS val 516735325 ecr 516735325], length 0
+15:30:43.288669 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1216575:1232981, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288674 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1232981, win 14836, options [nop,nop,TS val 516735325 ecr 516735325], length 0
+15:30:43.288696 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1232981:1249387, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288719 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1249387:1265793, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288723 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1265793, win 15509, options [nop,nop,TS val 516735325 ecr 516735325], length 0
+15:30:43.288741 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1265793:1282199, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288760 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1282199:1298605, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288778 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1298605:1315011, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288797 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1315011:1331417, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288816 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1331417:1347823, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288839 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1347823:1364229, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288838 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1347823, win 15165, options [nop,nop,TS val 516735325 ecr 516735325], length 0
+15:30:43.288860 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1364229:1380635, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288883 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1380635:1397041, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288901 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1397041:1413447, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288920 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1413447:1429853, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288937 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1429853:1446259, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288957 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1446259:1462665, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288958 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1446259, win 14750, options [nop,nop,TS val 516735325 ecr 516735325], length 0
+15:30:43.288976 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1462665:1479071, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.288995 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1479071:1495477, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289015 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1495477:1511883, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289034 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1511883:1528289, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289052 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1528289:1544695, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289072 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1544695:1561101, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289081 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 1544695, win 14297, options [nop,nop,TS val 516735325 ecr 516735325], length 0
+15:30:43.289091 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1561101:1577507, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289109 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1577507:1593913, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289126 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1593913:1610319, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.289144 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 1610319:1626725, ack 2825, win 512, options [nop,nop,TS val 516735325 ecr 516735325], length 16406
+15:30:43.298316 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5252451, win 11192, options [nop,nop,TS val 516735334 ecr 516735329], length 0
+15:30:43.303879 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 2825:3134, ack 5252451, win 15509, options [nop,nop,TS val 516735340 ecr 516735329], length 309
+15:30:43.307423 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5252451:5253024, ack 3134, win 512, options [nop,nop,TS val 516735343 ecr 516735340], length 573
+15:30:43.307466 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5253024:5269430, ack 3134, win 512, options [nop,nop,TS val 516735343 ecr 516735340], length 16406
+15:30:43.307471 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5269430, win 16532, options [nop,nop,TS val 516735343 ecr 516735343], length 0
+15:30:43.307491 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5269430:5285836, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735343], length 16406
+15:30:43.307509 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5285836:5302242, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735343], length 16406
+15:30:43.307512 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5302242, win 18578, options [nop,nop,TS val 516735344 ecr 516735344], length 0
+15:30:43.307530 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5302242:5318648, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307547 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5318648:5335054, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307550 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5335054, win 19618, options [nop,nop,TS val 516735344 ecr 516735344], length 0
+15:30:43.307567 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5335054:5351460, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307583 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5351460:5367866, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307601 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5367866:5384272, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307628 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5384272:5400678, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307645 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5400678:5417084, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307661 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5417084:5433490, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307678 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5433490:5449896, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307705 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5449896:5466302, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307722 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5466302:5482708, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307740 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5482708:5499114, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307758 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5499114:5515520, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307776 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5515520:5531926, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307793 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5531926:5548332, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307810 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5548332:5564738, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307826 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5564738:5581144, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307843 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5581144:5597550, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307871 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5597550:5613956, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307906 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5613956:5630362, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307933 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5630362:5646768, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307949 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5646768:5663174, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307975 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5663174:5679580, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.307991 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5679580:5695986, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308007 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5695986:5712392, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308016 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5695986, win 18236, options [nop,nop,TS val 516735344 ecr 516735344], length 0
+15:30:43.308022 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5712392:5728798, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308041 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5728798:5745204, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308057 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5745204:5761610, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308083 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5761610:5778016, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308100 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5778016:5794422, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308126 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5794422:5810828, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308143 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5810828:5827234, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308177 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5827234:5843640, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308180 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5827234, win 17957, options [nop,nop,TS val 516735344 ecr 516735344], length 0
+15:30:43.308193 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5843640:5860046, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308209 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5860046:5876452, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308235 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5876452:5892858, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308251 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5892858:5909264, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308277 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5909264:5925670, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308292 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5925670:5942076, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308308 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5942076:5958482, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308313 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 5942076, win 17647, options [nop,nop,TS val 516735344 ecr 516735344], length 0
+15:30:43.308324 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5958482:5974888, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308339 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5974888:5991294, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308355 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 5991294:6007700, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308381 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6007700:6024106, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308397 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6024106:6040512, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308413 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6040512:6056918, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308429 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6056918:6073324, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308437 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6056918, win 17385, options [nop,nop,TS val 516735344 ecr 516735344], length 0
+15:30:43.308444 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6073324:6089730, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308461 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6089730:6106136, ack 3134, win 512, options [nop,nop,TS val 516735344 ecr 516735344], length 16406
+15:30:43.308478 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6106136:6122542, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735344], length 16406
+15:30:43.308494 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6122542:6138948, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735344], length 16406
+15:30:43.308511 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6138948:6155354, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735344], length 16406
+15:30:43.308527 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6155354:6171760, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735344], length 16406
+15:30:43.308543 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6171760:6188166, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735344], length 16406
+15:30:43.308549 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6171760, win 17109, options [nop,nop,TS val 516735345 ecr 516735344], length 0
+15:30:43.308559 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6188166:6204572, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308576 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6204572:6220978, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308592 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6220978:6237384, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308609 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6237384:6253790, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308625 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6253790:6270196, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308641 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6270196:6286602, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308658 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6286602:6303008, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308662 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6286602, win 16867, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.308674 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6303008:6319414, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308690 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6319414:6335820, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308707 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6335820:6352226, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308724 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6352226:6368632, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308740 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6368632:6385038, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308756 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6385038:6401444, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308773 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6401444:6417850, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308775 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6401444, win 16675, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.308788 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6417850:6434256, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308805 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6434256:6450662, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308820 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6450662:6467068, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308836 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6467068:6483474, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308853 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6483474:6499880, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308870 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6499880:6516286, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308886 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6516286:6532692, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308888 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6516286, win 16434, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.308902 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6532692:6549098, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308917 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6549098:6565504, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308933 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6565504:6581910, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308948 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6581910:6598316, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308965 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6598316:6614722, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308981 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6614722:6631128, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.308997 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6631128:6647534, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309001 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6631128, win 16173, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.309013 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6647534:6663940, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309029 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6663940:6680346, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309045 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6680346:6696752, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309061 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6696752:6713158, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309077 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6713158:6729564, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309094 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6729564:6745970, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309111 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6745970:6762376, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309113 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6745970, win 15931, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.309126 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6762376:6778782, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309142 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6778782:6795188, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309158 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6795188:6811594, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309173 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6811594:6828000, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309189 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6828000:6844406, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309205 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6844406:6860812, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309221 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6860812:6877218, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309226 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6860812, win 15601, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.309237 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6877218:6893624, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309253 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6893624:6910030, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309269 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6910030:6926436, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309285 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6926436:6942842, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309301 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6942842:6959248, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309317 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6959248:6975654, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309334 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6975654:6992060, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309337 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 6975654, win 15290, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.309350 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 6992060:7008466, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309365 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7008466:7024872, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309382 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7024872:7041278, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309397 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7041278:7057684, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309413 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7057684:7074090, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309429 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7074090:7090496, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309446 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7090496:7106902, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309449 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7090496, win 14822, options [nop,nop,TS val 516735345 ecr 516735345], length 0
+15:30:43.309462 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7106902:7123308, ack 3134, win 512, options [nop,nop,TS val 516735345 ecr 516735345], length 16406
+15:30:43.309478 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7123308:7139714, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735345], length 16406
+15:30:43.309494 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7139714:7156120, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735345], length 16406
+15:30:43.309510 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7156120:7172526, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735345], length 16406
+15:30:43.309526 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7172526:7188932, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735345], length 16406
+15:30:43.309543 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7188932:7205338, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735345], length 16406
+15:30:43.309559 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7205338:7221744, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735345], length 16406
+15:30:43.309560 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7205338, win 14373, options [nop,nop,TS val 516735346 ecr 516735345], length 0
+15:30:43.309576 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7221744:7238150, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309592 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7238150:7254556, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309608 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7254556:7270962, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309623 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7270962:7287368, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309639 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7287368:7303774, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309655 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7303774:7320180, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309670 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7320180:7336586, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309675 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7320180, win 16081, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.309687 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7336586:7352992, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309703 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7352992:7369398, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309718 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7369398:7385804, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309734 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7385804:7402210, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309749 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7402210:7418616, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309765 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7418616:7435022, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309780 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7435022:7451428, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309786 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7435022, win 15839, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.309796 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7451428:7467834, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309812 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7467834:7484240, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309828 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7484240:7500646, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309844 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7500646:7517052, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309859 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7517052:7533458, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309874 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7533458:7549864, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309890 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7549864:7566270, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309898 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7549864, win 15578, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.309906 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7566270:7582676, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309923 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7582676:7599082, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309938 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7599082:7615488, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309956 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7615488:7631894, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309972 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7631894:7648300, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.309988 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7648300:7664706, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310004 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7664706:7681112, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310009 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7664706, win 15337, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.310019 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7681112:7697518, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310035 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7697518:7713924, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310051 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7713924:7730330, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310067 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7730330:7746736, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310083 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7746736:7763142, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310131 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7763142, win 15075, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.310132 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7763142:7779548, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310151 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7779548:7795954, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310169 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7795954:7812360, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310195 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7812360:7828766, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310222 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7828766:7845172, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310259 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7845172:7861578, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310276 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7861578:7877984, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310282 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7861578, win 14592, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.310293 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7877984:7894390, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310310 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7894390:7910796, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310326 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7910796:7927202, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310343 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7927202:7943608, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310360 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7943608:7960014, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310379 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7960014:7976420, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310398 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7976420:7992826, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 16406
+15:30:43.310398 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7976420, win 14212, options [nop,nop,TS val 516735346 ecr 516735346], length 0
+15:30:43.310409 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7992826:7995107, ack 3134, win 512, options [nop,nop,TS val 516735346 ecr 516735346], length 2281
+15:30:43.310518 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7995107, win 14849, options [nop,nop,TS val 516735347 ecr 516735346], length 0
+15:30:43.314504 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 3134:3443, ack 7995107, win 19618, options [nop,nop,TS val 516735351 ecr 516735346], length 309
+15:30:43.316125 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7995107:7995695, ack 3443, win 512, options [nop,nop,TS val 516735352 ecr 516735351], length 588
+15:30:43.316154 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [P.], seq 7995695:7995988, ack 3443, win 512, options [nop,nop,TS val 516735352 ecr 516735351], length 293
+15:30:43.316414 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [.], ack 7995988, win 19618, options [nop,nop,TS val 516735352 ecr 516735352], length 0
+15:30:43.364353 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 3443:4144, ack 7995988, win 19618, options [nop,nop,TS val 516735400 ecr 516735352], length 701
+15:30:43.365609 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [F.], seq 7995988, ack 4144, win 512, options [nop,nop,TS val 516735402 ecr 516735400], length 0
+15:30:43.365723 IP voodoo.csl.cse.uoi.gr.9000 > voodoo.csl.cse.uoi.gr.38148: Flags [P.], seq 4144:4168, ack 7995989, win 19618, options [nop,nop,TS val 516735402 ecr 516735402], length 24
+15:30:43.365756 IP voodoo.csl.cse.uoi.gr.38148 > voodoo.csl.cse.uoi.gr.9000: Flags [R], seq 2454470708, win 0, length 0
+
