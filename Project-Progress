@@ -139,9 +139,16 @@ sse customer key md5: This header is used to transport the base64-encoded 128-bi
 
 INTERCEPTING HHTP REQUESTS - TCPDUMP
 
+https://danielmiessler.com/study/tcpdump/
+https://bencane.com/2014/10/13/quick-and-practical-reference-for-tcpdump/
+
 Redirect tcpdump output of file upload via TLS to tls_dump.txt.
 -X : Show the packet’s contents in both hex and ASCII.
 
+# Dump tcp communication on port 9000
 sudo tcpdump -i any port 9000 -X >> tls_dump.txt
 
-Verified that via TLS the file contents are encrypted but with non-TLS communication a curious attacker may observe the file content if no previous encryption was applied
+# Sum the bytes transmitted during communication stored in file non_tls_upload.txt
+awk '{s+=$(NF)} END{print s}' non_tls_upload.txt
+
+Verified that via TLS the file contents are encrypted but with non-TLS communication a curious attacker may observe the file content if no previous encryption was applied.

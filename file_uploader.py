@@ -28,7 +28,6 @@ def encrypt(file_path, file_name, AES_KEY):
     key = go_string(c_char_p(AES_KEY.encode('utf-8')), len(AES_KEY))
     file_name = go_string(c_char_p(file_name.encode('utf-8')), len(file_name))
 
-    
     encrypted_file_name = lib.encrypt(fp, file_name, key)
     #end = time.time()
     #print(end - start)
