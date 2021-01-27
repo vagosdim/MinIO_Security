@@ -11,6 +11,7 @@ import (
 	"os"
 	"fmt"
 	"C"
+	"time"
 )
 
 func main() {
@@ -36,7 +37,14 @@ func main() {
 		log.Fatal(err)
 	}
 
+	//start := time.Now()
+	// Code to measure
 	encrypted := encrypt(plaintext, keyString)
+	
+	//duration := time.Since(start)
+	//fmt.Println(duration)
+	//time.Sleep(20*time.Second)
+
 	log.Println("\n")
 	fmt.Printf("Encrypted data: %s\n", encrypted)
 	

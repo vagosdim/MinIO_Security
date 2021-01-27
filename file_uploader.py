@@ -3,6 +3,7 @@ import sys
 import urllib3
 import ctypes
 import os
+import time
 from minio import Minio
 from minio.error import S3Error
 from ctypes import *
@@ -19,6 +20,7 @@ class go_string(Structure):
 
 def encrypt(file_path, file_name, AES_KEY):
 
+    #start = time.time()
     lib = cdll.LoadLibrary('./libencrypt.so')
     lib.encrypt.restype = c_char_p
     
@@ -26,18 +28,24 @@ def encrypt(file_path, file_name, AES_KEY):
     key = go_string(c_char_p(AES_KEY.encode('utf-8')), len(AES_KEY))
     file_name = go_string(c_char_p(file_name.encode('utf-8')), len(file_name))
 
+    
     encrypted_file_name = lib.encrypt(fp, file_name, key)
+    #end = time.time()
+    #print(end - start)
+    #breakpoint()
 
     return encrypted_file_name
 
 def main():
     
+
     # Get input file path from command line
     file_path = sys.argv[1]
 
     # Extract only the name of the file without the ending ex/ "test.txt" --> "test"
     file_name = (file_path.split("/")[-1]).split(".")[0]
     file_name = encrypt(file_path, file_name, AES_KEY)
+    
 
     # Create a client with the MinIO server playground, its access key
     # and secret key.
@@ -65,21 +73,20 @@ def main():
                     secure=True,
                     http_client=httpClient)
 
-
-    # Make 'asiatrip' bucket if not exist.
+    
+    # Make 'BUCKET_NAME' bucket if not exist.
     found = client.bucket_exists(BUCKET_NAME)
     if not found:
         client.make_bucket(BUCKET_NAME)
     else:
         print("Bucket " + BUCKET_NAME + " already exists.")
-
+    
     client.fput_object(
         BUCKET_NAME, file_name, file_name
     )
     print(
         file_path + " is successfully uploaded as object " + str(file_name) + " to bucket: " + BUCKET_NAME
     )
-
 
 if __name__ == "__main__":
     try:
