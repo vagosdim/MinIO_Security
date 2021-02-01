@@ -590,6 +590,7 @@ func (fs *FSObjects) DeleteBucket(ctx context.Context, bucket string, forceDelet
 // if source object and destination object are same we only
 // update metadata.
 func (fs *FSObjects) CopyObject(ctx context.Context, srcBucket, srcObject, dstBucket, dstObject string, srcInfo ObjectInfo, srcOpts, dstOpts ObjectOptions) (oi ObjectInfo, e error) {
+
 	if srcOpts.VersionID != "" && srcOpts.VersionID != nullVersionID {
 		return oi, VersionNotFound{
 			Bucket:    srcBucket,

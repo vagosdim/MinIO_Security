@@ -4,15 +4,19 @@ import urllib3
 import ctypes
 import os
 import time
+
 from minio import Minio
 from minio.error import S3Error
 from ctypes import *
+from encryption_stats import export_stats_to_csv
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "encrypted"
 ENCRYPTION_LIBRARY = './Libraries/libencrypt.so'
 AES_KEY = "Keys/test_key.dat"
 PUBLIC_CERTIFICATE = '/home/edimoulis/.minio/certs/public.crt'
+
+lib = cdll.LoadLibrary(ENCRYPTION_LIBRARY)
 
 class go_string(Structure):
     _fields_ = [
@@ -22,7 +26,6 @@ class go_string(Structure):
 
 def encrypt(file_path, file_name, AES_KEY):
 
-    lib = cdll.LoadLibrary(ENCRYPTION_LIBRARY)
     lib.encrypt.restype = c_char_p
     
     fp = go_string(c_char_p(file_path.encode('utf-8')), len(file_path))
@@ -33,14 +36,42 @@ def encrypt(file_path, file_name, AES_KEY):
 
     return encrypted_file_name
 
+def decrypt(file_path, AES_KEY):
+
+    #lib.decrypt.restype = c_char_p
+    
+    fp = go_string(c_char_p(file_path.encode('utf-8')), len(file_path))
+    key = go_string(c_char_p(AES_KEY.encode('utf-8')), len(AES_KEY))
+    
+    lib.decrypt(fp, key)
+
+    return
+
+def measure_execution_time(file_path, file_name, AES_KEY):
+
+    samples = []
+    for i in range(40):
+        start = time.time()
+        encrypt(file_path, file_name, AES_KEY)
+        end = time.time()
+        samples.append(end-start)
+    
+    export_stats_to_csv(samples, file_name, 'golang_encryption.csv')
+    breakpoint()
+
+    return
+
 def main():
     
-
     # Get input file path from command line
     file_path = sys.argv[1]
 
     # Extract only the name of the file without the ending ex/ "test.txt" --> "test"
     file_name = (file_path.split("/")[-1]).split(".")[0]
+
+    # Export encryption stats to csv
+    measure_execution_time(file_path, file_name, AES_KEY)
+
     file_name = encrypt(file_path, file_name, AES_KEY)
 
     # Create custom http client requiring certificate

@@ -335,6 +335,7 @@ type WebBucketInfo struct {
 // ListBuckets - list buckets api.
 func (web *webAPIHandlers) ListBuckets(r *http.Request, args *WebGenericArgs, reply *ListBucketsRep) error {
 	ctx := newWebContext(r, args, "WebListBuckets")
+
 	objectAPI := web.ObjectAPI()
 	if objectAPI == nil {
 		return toJSONError(ctx, errServerNotInitialized)

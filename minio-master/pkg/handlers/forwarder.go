@@ -83,6 +83,7 @@ func (f *Forwarder) getURLFromRequest(req *http.Request) *url.URL {
 	// If the Request was created by Go via a real HTTP request,  RequestURI will
 	// contain the original query string. If the Request was created in code, RequestURI
 	// will be empty, and we will use the URL object instead
+	//time.Sleep(100*time.Second)
 	u := req.URL
 	if req.RequestURI != "" {
 		parsedURL, err := url.ParseRequestURI(req.RequestURI)

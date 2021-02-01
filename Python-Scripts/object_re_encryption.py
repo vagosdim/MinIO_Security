@@ -3,10 +3,12 @@
 import sys
 import base64
 import urllib3
+import time
 from minio import Minio
 from minio.sse import SseCustomerKey
 from minio.commonconfig import REPLACE, CopySource
 from minio.error import S3Error
+
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "encrypted"
@@ -56,11 +58,12 @@ def main():
     # Source object customer provided key
     SSE_SRC = sse_encryption(OLD_AES_KEY)
     
-    # Deestination Object SSE Customer provided key encryption
+    # Destination Object SSE Customer provided key encryption
     SSE_DST = sse_encryption(NEW_AES_KEY)
 
     # Copy the object to the same bucket using a different key
     # Object does not leave the server this way
+    start = time.time()
     result = client.copy_object(
         BUCKET_NAME,
         file_name,
@@ -68,6 +71,8 @@ def main():
         sse=SSE_DST,
 
     )
+    end = time.time()
+    print("Elapsed time: " + str(end - start))
     print(result.object_name, result.version_id)
 
 

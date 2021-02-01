@@ -3,9 +3,11 @@ import sys
 import urllib3
 import os
 import base64
+import time
 from minio import Minio
 from minio.sse import SseCustomerKey
 from minio.error import S3Error
+from encryption_stats import export_stats_to_csv
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "encrypted"
@@ -22,6 +24,22 @@ def sse_encryption(key):
     SSE = SseCustomerKey(key)
 
     return (SSE)
+
+def measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE):
+
+    samples = []
+    for i in range(100):
+        start = time.time()
+        client.fput_object(
+            BUCKET_NAME, file_name, file_path, sse=SSE
+        )
+        end = time.time()
+        samples.append(end-start)
+    
+    export_stats_to_csv(samples, file_name, 'sse_encryption.csv')
+    breakpoint()
+
+    return
 
 def main():
     
@@ -59,17 +77,19 @@ def main():
 
     # SSE Customer provided key encryption
     SSE = sse_encryption(key_path)
-
+    
+    measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
     result = client.fput_object(
         BUCKET_NAME, file_name, file_path, sse=SSE
     )
+
     print(
         file_name + " is successfully uploaded as object " + str(file_name) + " to bucket: " + BUCKET_NAME
     )
 
     # Download the object again with SSE configuration
-    output_filename = input("Save downloaded object as: ")
-    client.fget_object(BUCKET_NAME, file_name, output_filename, ssec=SSE)
+    # output_filename = input("Save downloaded object as: ")
+    # client.fget_object(BUCKET_NAME, file_name, output_filename, ssec=SSE)
 
 
 if __name__ == "__main__":

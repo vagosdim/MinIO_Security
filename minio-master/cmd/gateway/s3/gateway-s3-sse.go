@@ -351,7 +351,8 @@ func (l *s3EncObjects) GetObjectInfo(ctx context.Context, bucket string, object 
 }
 
 // CopyObject copies an object from source bucket to a destination bucket.
-func (l *s3EncObjects) CopyObject(ctx context.Context, srcBucket string, srcObject string, dstBucket string, dstObject string, srcInfo minio.ObjectInfo, s, d minio.ObjectOptions) (objInfo minio.ObjectInfo, err error) {
+func (l *s3EncObjects) CopyObject(ctx context.Context, srcBucket string, srcObject string, dstBucket string, dstObject string, srcInfo minio.ObjectInfo, s, d minio.ObjectOptions) (objInfo minio.ObjectInfo, err error) {	
+
 	cpSrcDstSame := strings.EqualFold(path.Join(srcBucket, srcObject), path.Join(dstBucket, dstObject))
 	if cpSrcDstSame {
 		var gwMeta gwMetaV1
@@ -438,6 +439,7 @@ func (l *s3EncObjects) NewMultipartUpload(ctx context.Context, bucket string, ob
 
 // PutObject creates a new object with the incoming data,
 func (l *s3EncObjects) PutObject(ctx context.Context, bucket string, object string, data *minio.PutObjReader, opts minio.ObjectOptions) (objInfo minio.ObjectInfo, err error) {
+
 	var sseOpts encrypt.ServerSide
 	// Decide if sse options needed to be passed to backend
 	if opts.ServerSideEncryption != nil &&
