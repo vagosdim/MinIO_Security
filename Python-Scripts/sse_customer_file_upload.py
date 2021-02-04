@@ -78,7 +78,7 @@ def main():
     # SSE Customer provided key encryption
     SSE = sse_encryption(key_path)
     
-    measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
+    #measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
     result = client.fput_object(
         BUCKET_NAME, file_name, file_path, sse=SSE
     )

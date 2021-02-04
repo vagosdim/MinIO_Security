@@ -29,6 +29,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/minio/minio/cmd/crypto"
 	xhttp "github.com/minio/minio/cmd/http"
@@ -226,6 +227,7 @@ func setEncryptionMetadata(r *http.Request, bucket, object string, metadata map[
 // with the client provided key. It also marks the object as client-side-encrypted
 // and sets the correct headers.
 func EncryptRequest(content io.Reader, r *http.Request, bucket, object string, metadata map[string]string) (io.Reader, crypto.ObjectKey, error) {
+	//time.Sleep(100  * time.Second)
 	if crypto.S3.IsRequested(r.Header) && crypto.SSEC.IsRequested(r.Header) {
 		return nil, crypto.ObjectKey{}, crypto.ErrIncompatibleEncryptionMethod
 	}
