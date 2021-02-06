@@ -51,19 +51,15 @@ def decrypt(file_path, AES_KEY):
 def measure_execution_time(file_path, file_name, AES_KEY):
 
     samples = []
-    cpu_usage = []
-    ram_usage = []
 
-    for i in range(50):
+    for i in range(100):
         start = time.time()
         encrypt(file_path, file_name, AES_KEY)
-        cpu_usage.append(((psutil.cpu_percent(interval=None))))
-        ram_usage.append(psutil.virtual_memory().percent)
         end = time.time()
         samples.append(end-start)
     
-    #export_stats_to_csv(samples, file_name, 'golang_encryption.csv')
-    export_system_stats(cpu_usage, ram_usage, file_name, 'golang_encryption.csv')
+    #export_stats_to_csv(samples, file_name, 'golang_re_encryption.csv')
+    #export_system_stats(cpu_usage, ram_usage, file_name, 'golang_encryption.csv')
     breakpoint()
 
     return
@@ -77,7 +73,7 @@ def main():
     file_name = (file_path.split("/")[-1]).split(".")[0]
 
     # Export encryption stats to csv
-    measure_execution_time(file_path, file_name, AES_KEY)
+    #measure_execution_time(file_path, file_name, AES_KEY)
 
     file_name = encrypt(file_path, file_name, AES_KEY)
 

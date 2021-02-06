@@ -1,4 +1,4 @@
-# Usage: python3 plot2.py golang_encryption.csv sse_customer_file_upload.py
+# Usage: python3 plot_encryption_speed.py golang_encryption.csv sse_re_encryption.csv
 import numpy as np
 import csv
 import sys
@@ -49,9 +49,9 @@ color='r',
 marker="o",
 label='MinIO SSE-C')
 
-plt.xlabel('Input File Size (MB)', weight='bold')
-plt.ylabel('Encryption Spped (Seconds)', weight='bold')
-plt.title('Golang Encryption vs MinIO SSE-C Encryption', weight='bold')
+plt.xlabel('Input File Size', weight='bold')
+plt.ylabel('RAM Usage (%)', weight='bold')
+plt.title('Golang Re-Encryption vs MinIO SSE-C Key Rotation', weight='bold')
 #plt.yticks(index + bar_width/2, ('10M Writes', '10M Reads', '10M Overwrites'), weight='bold')
 plt.legend()
 

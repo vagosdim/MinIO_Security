@@ -42,7 +42,7 @@ def measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE):
         end = time.time()
         samples.append(end-start)
     
-    export_system_stats(cpu_usage, ram_usage, file_name, 'cpu_percent_usage.csv')
+    #export_system_stats(cpu_usage, ram_usage, file_name, 'cpu_percent_usage.csv')
     #export_stats_to_csv(samples, file_name, 'sse_encryption.csv')
     breakpoint()
 
@@ -85,7 +85,7 @@ def main():
     # SSE Customer provided key encryption
     SSE = sse_encryption(key_path)
     
-    measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
+    #measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
     result = client.fput_object(
         BUCKET_NAME, file_name, file_path, sse=SSE
     )

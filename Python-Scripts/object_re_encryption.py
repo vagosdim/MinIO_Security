@@ -1,4 +1,4 @@
-# Usage: python3 object_re_encryption.py test.bin
+# Usage: python3 object_re_encryption.py /home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Input/1KB.bin
 
 import sys
 import base64
@@ -8,7 +8,6 @@ from minio import Minio
 from minio.sse import SseCustomerKey
 from minio.commonconfig import REPLACE, CopySource
 from minio.error import S3Error
-
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "encrypted"
@@ -28,7 +27,8 @@ def sse_encryption(key):
 def main():
 
     # Get input file path from command line
-    file_name = sys.argv[1]
+    file_path = sys.argv[1]
+    file_name = file_path.split("/")[-1]
 
     httpClient = urllib3.PoolManager(
                 timeout=urllib3.Timeout.DEFAULT_TIMEOUT,
@@ -63,7 +63,7 @@ def main():
 
     # Copy the object to the same bucket using a different key
     # Object does not leave the server this way
-    start = time.time()
+    
     result = client.copy_object(
         BUCKET_NAME,
         file_name,
@@ -71,8 +71,7 @@ def main():
         sse=SSE_DST,
 
     )
-    end = time.time()
-    print("Elapsed time: " + str(end - start))
+
     print(result.object_name, result.version_id)
 
 
