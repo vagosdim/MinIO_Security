@@ -53,7 +53,7 @@ bar_width = 0.35
 opacity = 0.9
 
 ax = sns.lineplot(index, mean_minio, ci=95)
-ax.fill_between(index, (ml_minio), (mh_minio), color='b', alpha=.1)
+ax.fill_between(index, ml_minio, mean_minio, mh_minio, color='b', alpha=.2)
 ax.yaxis.grid(color='gray', linestyle='dashed')
 ax.set_axisbelow(True)
 

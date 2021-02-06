@@ -1,14 +1,15 @@
-# Usage: python3 file_uploader.py Input/test.txt
+# Usage: python3 file_uploader.py /home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Input/1KB.bin
 import sys
 import urllib3
 import ctypes
 import os
 import time
+import psutil
 
 from minio import Minio
 from minio.error import S3Error
 from ctypes import *
-from encryption_stats import export_stats_to_csv
+from encryption_stats import *
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "encrypted"
@@ -50,13 +51,19 @@ def decrypt(file_path, AES_KEY):
 def measure_execution_time(file_path, file_name, AES_KEY):
 
     samples = []
-    for i in range(40):
+    cpu_usage = []
+    ram_usage = []
+
+    for i in range(50):
         start = time.time()
         encrypt(file_path, file_name, AES_KEY)
+        cpu_usage.append(((psutil.cpu_percent(interval=None))))
+        ram_usage.append(psutil.virtual_memory().percent)
         end = time.time()
         samples.append(end-start)
     
-    export_stats_to_csv(samples, file_name, 'golang_encryption.csv')
+    #export_stats_to_csv(samples, file_name, 'golang_encryption.csv')
+    export_system_stats(cpu_usage, ram_usage, file_name, 'golang_encryption.csv')
     breakpoint()
 
     return

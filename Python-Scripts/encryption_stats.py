@@ -21,3 +21,9 @@ def export_stats_to_csv(samples, input_file, output_file):
         csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([input_file, str(median), str(m_l), str(m), str(m_u)])
 
+
+def export_system_stats(cpu_usage, ram_usage, input_file, output_file):
+
+    with open(output_file, mode='a') as csv_file:
+        csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer.writerow([input_file, str(np.median(cpu_usage)), str(np.median(ram_usage))])

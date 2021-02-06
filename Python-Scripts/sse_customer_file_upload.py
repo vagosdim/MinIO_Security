@@ -1,13 +1,14 @@
-# Usage: python3 sse_customer_file_upload.py Input/test.txt Keys/test_key.dat
+# Usage: python3 sse_customer_file_upload.py /home/edimoulis/Master/Semester3/Security-of-Computer-Systems/Input/1KB.bin Keys/test_key.dat
 import sys
 import urllib3
 import os
 import base64
 import time
+import psutil
 from minio import Minio
 from minio.sse import SseCustomerKey
 from minio.error import S3Error
-from encryption_stats import export_stats_to_csv
+from encryption_stats import *
 
 MINIO_URL = "10.7.2.207:9000"
 BUCKET_NAME = "encrypted"
@@ -28,15 +29,21 @@ def sse_encryption(key):
 def measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE):
 
     samples = []
+    cpu_usage = []
+    ram_usage = []
+
     for i in range(100):
         start = time.time()
         client.fput_object(
             BUCKET_NAME, file_name, file_path, sse=SSE
         )
+        cpu_usage.append(((psutil.cpu_percent(interval=None))))
+        ram_usage.append(psutil.virtual_memory().percent)
         end = time.time()
         samples.append(end-start)
     
-    export_stats_to_csv(samples, file_name, 'sse_encryption.csv')
+    export_system_stats(cpu_usage, ram_usage, file_name, 'cpu_percent_usage.csv')
+    #export_stats_to_csv(samples, file_name, 'sse_encryption.csv')
     breakpoint()
 
     return
@@ -78,7 +85,7 @@ def main():
     # SSE Customer provided key encryption
     SSE = sse_encryption(key_path)
     
-    #measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
+    measure_execution_time(client, BUCKET_NAME, file_name, file_path, SSE)
     result = client.fput_object(
         BUCKET_NAME, file_name, file_path, sse=SSE
     )
